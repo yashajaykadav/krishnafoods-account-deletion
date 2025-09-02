@@ -1,40 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Account Deletion - Krishna Foods</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Deletion - Krishna Foods</title>
+    <!-- Use Tailwind CSS for easy and responsive styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* A gentle background color for the body */
+        body {
+            background-color: #f7fafc;
+        }
+
+        /* Custom style for the app name to make it stand out */
+        .app-name {
+            font-family: 'Inter', sans-serif;
+            font-weight: 800;
+            letter-spacing: 1px;
+            color: #d97706; /* A warm, food-related orange */
+        }
+    </style>
 </head>
-<body style="font-family: Arial, sans-serif; max-width: 700px; margin: auto; padding: 20px;">
-  <h1>Account Deletion Request</h1>
-  <p>
-    If you wish to delete your account and all associated data from the 
-    <strong>Krishna Foods Ordering App</strong>, please follow the steps below.
-  </p>
+<body class="flex items-center justify-center min-h-screen p-4">
 
-  <h2>How to Request Deletion</h2>
-  <ol>
-    <li>Send an email to <a href="mailto:yashkadav52@gmail.com">yashkadav52@gmail.com</a> 
-        with the subject line <strong>Delete My Account</strong>.</li>
-    <li>Include your registered Google account email in the message.</li>
-  </ol>
+    <!-- Main container for the content, centered on the page -->
+    <div class="max-w-xl w-full bg-white rounded-2xl shadow-xl p-8 md:p-12 border border-gray-100">
 
-  <h2>What Data Gets Deleted</h2>
-  <ul>
-    <li>User profile information (name, phone, email, location).</li>
-    <li>Order history and related app activity.</li>
-    <li>Authentication credentials.</li>
-  </ul>
+        <!-- Header section with a stylized app name -->
+        <header class="text-center mb-8">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-800 mb-2">
+                <span class="app-name">Krishna Foods</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-600 font-semibold">Account Deletion Request</p>
+        </header>
 
-  <h2>Retention</h2>
-  <p>
-    No user data will be retained after deletion, except where legally required 
-    (e.g., invoices kept for accounting purposes).
-  </p>
+        <!-- Main content section -->
+        <main class="text-gray-700 space-y-6">
+            <p>
+                If you wish to delete your account and all associated data from the
+                <strong class="text-orange-600">Krishna Foods Ordering App</strong>, please follow the steps below.
+            </p>
 
-  <p>
-    If you have any questions, contact us at 
-    <a href="mailto:yashkadav52@gmail.com">yashkadav52@gmail.com</a>.
-  </p>
+            <!-- Section for deletion instructions -->
+            <div>
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">How to Request Deletion</h2>
+                <ol class="list-decimal list-inside space-y-2 text-lg">
+                    <li>Send an email to <a href="mailto:yashkadav52@gmail.com" class="text-blue-600 hover:underline">yashkadav52@gmail.com</a>
+                        with the subject line <strong class="text-orange-600">"Delete My Account"</strong>.
+                    </li>
+                    <li>Include your registered Google account email in the message body.</li>
+                </ol>
+            </div>
+
+            <!-- Section for data that gets deleted -->
+            <div>
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">What Data Gets Deleted</h2>
+                <ul class="list-disc list-inside space-y-2 text-lg">
+                    <li>User profile information (name, phone, email, location).</li>
+                    <li>Order history and related app activity.</li>
+                    <li>Authentication credentials.</li>
+                </ul>
+            </div>
+
+            <!-- Retention policy section -->
+            <div>
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Data Retention</h2>
+                <p>
+                    No user data will be retained after deletion, except where legally required
+                    (e.g., invoices kept for accounting and tax purposes).
+                </p>
+            </div>
+        </main>
+
+        <!-- Footer section -->
+        <footer class="mt-8 text-center text-gray-500 text-sm">
+            <p>
+                If you have any questions, contact us at
+                <a href="mailto:yashkadav52@gmail.com" class="text-blue-600 hover:underline">yashkadav52@gmail.com</a>.
+            </p>
+        </footer>
+    </div>
 </body>
 </html>
